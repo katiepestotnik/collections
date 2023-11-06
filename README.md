@@ -19,5 +19,5 @@ AAU - Sort specific collections by various keywords
 ## Color Palette for design
 ![palette](./assets/palette.png)
 
-### Citations for help taking messages as email
+### Citation for help taking messages as email
 [Email with Django](https://learndjango.com/tutorials/django-email-contact-form-tutorial)
