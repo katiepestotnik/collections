@@ -1,6 +1,6 @@
 # The Collector App
 
-(section for app images)
+![landing-page](./assets/landing-page.png)
 
 - AAU => Signup, Login, and Logout to the collector app
 - AAU => Select a collection to see all users entires
