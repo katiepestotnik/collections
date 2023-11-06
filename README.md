@@ -13,8 +13,8 @@
 - Python
 - Django
 - PostgreSQL
-- Tailwind
-- TBD email api
+- Tailwind command = `python manage.py tailwind start`
+- SendGrid
 
 
 ## Color Palette for design

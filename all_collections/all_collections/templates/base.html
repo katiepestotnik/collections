@@ -1,0 +1,18 @@
+{% comment %} {% load static %} {% endcomment %}
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% tailwind_css %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+</head>
+<body class='w-screen h-screen'>
+    {% block content %}
+    {% endblock %}
+    <footer class='sticky top-[100vh] text-[#162666] text-m text-right bg-[#FDF8E2] p-10'>
+        Developed by Katie Pestotnik using Python, Django, Tailwind, PostgreSQL
+    </footer>
+</body>
+</html>

@@ -743,6 +743,18 @@ select {
   position: static;
 }
 
+.sticky {
+  position: sticky;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-\[100vh\] {
+  top: 100vh;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
