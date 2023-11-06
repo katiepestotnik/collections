@@ -65,10 +65,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'all_collections.urls'
 
+ALL_COLLECTIONS = BASE_DIR / 'all_collections/templates'
+BIRDS = BASE_DIR / 'birds_app/templates/birds'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'all_collections/templates'],
+        'DIRS': [ALL_COLLECTIONS, BIRDS],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -143,5 +146,15 @@ INTERNAL_IPS = [
 ]
 
 #email config
-DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# EMAIL_HOST = 'smtp.gmail.com '
+
+# EMAIL_PORT = 587
+
+# EMAIL_USE_TLS = True
+
+# EMAIL_HOST_USER = ''
+
+# EMAIL_HOST_PASSWORD = ''
