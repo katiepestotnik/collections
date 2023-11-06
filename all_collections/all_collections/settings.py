@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'tailwind',
     'theme',
     'birds_app',
+    'mammals',
+    'sendemail',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -139,3 +141,7 @@ TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = [
     '127.0.0.1'
 ]
+
+#email config
+DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

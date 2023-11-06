@@ -20,7 +20,9 @@ from . import views
 
 urlpatterns = [
     #set up a home page for all collections
+    path('', include("sendemail.urls")),
     path('', views.main, name='main'),
     path('birds/',include('birds_app.urls')),
     path('admin/', admin.site.urls),
+
 ]
