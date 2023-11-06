@@ -2,11 +2,11 @@
 
 (section for app images)
 
-AAU - Signup, Login, and Logout to the collector app
-AAU - Select a collection to see all users entires
-AAU - Select a collection to add, edit, delete items to a specific collection only under that specific users collection
-AAU - If desired collection is not available, send a message to developer asking for a collection type to be added
-AAU - Sort specific collections by various keywords
+- AAU => Signup, Login, and Logout to the collector app
+- AAU => Select a collection to see all users entires
+- AAU => Select a collection to add, edit, delete items to a specific collection only under that specific users collection
+- AAU => If desired collection is not available, send a message to developer asking for a collection type to be added
+- AAU => Sort specific collections by various keywords
 
 ## Technologies
 - Python
