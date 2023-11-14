@@ -1,0 +1,20 @@
+{% extends '../base.html'%}
+{% comment %} {% load static tailwind_tags %} {% endcomment %}
+{% block content %}
+    <h1 class='text-[#162666] font-bold text-4xl text-center bg-[#FDF8E2] p-10'>ALL BIRDS</h1>
+    {% for bird in bird_list%}
+      <div class='max-w-xs rounded overflow-hidden shadow-lg'>
+        <img src="{{bird.url}}" alt="{{bird.species}}" class="w-full">
+        <div>
+          <div class='font-bold text-xl mb-2'>{{bird.species}}</div>
+          <div><span>Notes:</span><br>{{bird.notes}}</div>
+          <div><span>Location:</span><br>{{bird.location}}</div>
+          <div><span>Date:</span><br>{{bird.date}}</div>
+          <div><span>Colors:</span><br>{% for color in bird.colors%}
+            <li>{{color}}</li>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+ {% endblock %}
