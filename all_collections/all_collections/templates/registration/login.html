@@ -1,0 +1,19 @@
+{% extends '../base.html'%}
+{%block content %}
+<h1 class='text-[#162666] font-bold text-4xl text-center bg-[#FDF8E2] p-10'>LOG IN</h1>
+<div>
+  <form class="bg-white rounded px-8 pt-6 pb-8 mb-4 shadow-lg" action="" method='POST'>
+    {% csrf_token %}
+    <div class='mb-4'>
+      <label class='' for="username"></label>
+    </div>
+
+    {{form.as_table}}
+    <input type="hidden" name='next' value={{next}}>
+    <input type="submit" value="Log In">
+  </form>
+</div>
+
+
+
+{% endblock %}

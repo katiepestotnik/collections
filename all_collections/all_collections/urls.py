@@ -24,5 +24,5 @@ urlpatterns = [
   path('', views.main, name='main'),
   path('birds/',include('birds_app.urls')),
   path('admin/', admin.site.urls),
-
+  path('accounts/', include('django.contrib.auth.urls'))
 ]
